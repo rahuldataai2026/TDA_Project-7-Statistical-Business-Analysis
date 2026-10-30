@@ -1,0 +1,40 @@
+STATISTICAL HYPOTHESIS TEST RESULTS
+==========================================
+Dataset: 500 records; churned=53; retained=447; churn rate=10.6%
+Significance level: alpha = 0.05
+
+Welch t-test: Tenure (Churn=1 vs 0)
+Test statistic = -34.53490; p-value = 8.98233e-130
+Decision: statistically significant (reject H0).
+Mean churned=6.00; retained=40.15
+Mean difference (churned - retained) = -34.152; 95% CI [-36.095, -32.209]
+
+Welch t-test: MonthlyCharges (Churn=1 vs 0)
+Test statistic = 2.64644; p-value = 0.0100792
+Decision: statistically significant (reject H0).
+Mean churned=129.77; retained=111.72
+Mean difference (churned - retained) = 18.051; 95% CI [4.442, 31.660]
+
+Welch t-test: TotalCharges (Churn=1 vs 0)
+Test statistic = 0.09454; p-value = 0.924973
+Decision: not statistically significant (fail to reject H0).
+Mean churned=4265.75; retained=4234.58
+Mean difference (churned - retained) = 31.178; 95% CI [-627.483, 689.838]
+
+One-way ANOVA: MonthlyCharges by Contract
+Test statistic = 0.03127; p-value = 0.969212
+Decision: not statistically significant (fail to reject H0).
+Month-to-month: 112.83; One year: 114.01; Two year: 114.11
+
+Chi-square: Contract vs Churn
+Test statistic = 27.71530; p-value = 9.58735e-07
+Decision: statistically significant (reject H0).
+chi2=27.715, df=2; contingency table rows=contract, cols=churn
+
+Chi-square: PaymentMethod vs Churn
+Test statistic = 3.86952; p-value = 0.144459
+Decision: not statistically significant (fail to reject H0).
+chi2=3.870, df=2
+
+INTERPRETATION NOTE
+A significant association or difference does not establish causality. Results describe this dataset and may not generalize to the full customer base.
